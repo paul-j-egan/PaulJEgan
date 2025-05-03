@@ -1,0 +1,55 @@
+===== DATE =====
+Sat May  3 19:03:02 UTC 2025
+===== HOSTNAME =====
+PaulEganCATC
+===== ARCHITECTURE =====
+x86_64
+===== SYSTEM INFO =====
+Linux PaulEganCATC 6.11.0-1013-azure #13~24.04.1-Ubuntu SMP Fri Mar 28 23:43:34 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+===== UPTIME =====
+ 19:03:02 up 3 days, 23 min,  1 user,  load average: 0.00, 0.00, 0.00
+===== CURRENT USER =====
+paulegan
+===== LOGGED-IN USERS =====
+paulegan pts/0        2025-05-03 19:01 (109.78.10.29)
+===== USER ACTIVITY =====
+ 19:03:02 up 3 days, 23 min,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+paulegan          109.78.10.29     19:01    2days  0.00s  0.01s sshd: paulegan [priv]
+===== TOP PROCESSES =====
+top - 19:03:02 up 3 days, 23 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 113 total,   1 running, 112 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  9.1 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :    842.5 total,     75.8 free,    441.1 used,    474.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    401.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22776  14124   9644 S   0.0   1.6   0:11.62 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:01.90 kworker+
+===== COMMAND HISTORY =====
+  317  git add paulEganscript.sh paulEgan.txt
+  318  git commit -m "Update script and regenerate system report"
+  319  git push
+  320  vim ~/paulEganCATC/paulEganscript.sh
+  321  bash ~/paulEganCATC/paulEganscript.sh
+  322  cat paulEgan.txt
+  323  cd ~/paulEganCATC
+  324  git add paulEgan.txt
+  325  git commit -m "Update with working command history output"
+  326  git push
+  327  vim ~/paulEganCATC/paulEganscript.sh
+  328  cd ~/paulEganCATC
+  329  git add paulEganscript.sh paulEgan_*.txt
+  330  ls -lh *.txt
+  331  mv paulEgan.txt paulEgan_$(date +"%Y-%m-%d_%H-%M-%S").txt
+  332  ls -lh *.txt
+  333  git add paulEganscript.sh paulEgan_*.txt
+  334  git commit -m "Update system report and script with timestamped output"
+  335  git push
+  336  vim paulEganscript.sh

@@ -36,3 +36,4 @@ top -b -n 1 | head -n 15 >> "$output_file"
 echo "===== COMMAND HISTORY =====" >> "$output_file"
 history -r ~/.bash_history
 history | tail -n 20 >> "$output_file"
+
