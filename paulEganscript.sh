@@ -30,5 +30,5 @@ echo "===== TOP PROCESSES =====" >> paulEgan.txt
 top -b -n 1 | head -n 15 >> paulEgan.txt
 
 echo "===== COMMAND HISTORY =====" >> paulEgan.txt
-history | tail -n 20 >> paulEgan.txt
+tail -n 20 ~/.bash_history >> paulEgan.txt
 
