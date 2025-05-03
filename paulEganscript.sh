@@ -1,44 +1,34 @@
 #!/bin/bash
 
-Script: System Report
+# Script: System Report
 
-echo "===== DATE ====="
-date
-echo ""
+echo "===== DATE =====" >> paulEgan.txt
+date >> paulEgan.txt
 
-echo "=====HOSTNAME ====="
-hostname
-echo ""
+echo "=====HOSTNAME =====" >> paulEgan.txt
+hostname >> paulEgan.txt
 
-echo "===== ARCHITECTURE ====="
-arch
-echo ""
+echo "===== ARCHITECTURE =====" >> paulEgan.txt
+arch >> paulEgan.txt
 
-echo "=====SYSTEM INFO ====="
-uname -a
-echo ""
+echo "=====SYSTEM INFO =====" >> paulEgan.txt
+uname -a >> paulEgan.txt
 
-echo "===== UPTIME ====="
-uptime
-echo ""
+echo "===== UPTIME =====" >> paulEgan.txt
+uptime >> paulEgan.txt
 
-echo "===== CURRENT USER ====="
-whoami
-echo ""
+echo "===== CURRENT USER =====" >> paulEgan.txt
+whoami >> paulEgan.txt
 
-echo "===== LOGGED-IN USERS ====="
-who
-echo ""
+echo "===== LOGGED-IN USERS =====" >> paulEgan.txt
+who >> paulEgan.txt
 
-echo "===== USER ACTIVITY ====="
-w
-echo ""
+echo "===== USER ACTIVITY =====" >> paulEgan.txt
+w >> paulEgan.txt
 
-echo "===== TOP PROCESSES ====="
-top -b -n 1 | head -n 15
-echo ""
+echo "===== TOP PROCESSES =====" >> paulEgan.txt
+top -b -n 1 | head -n 15 >> paulEgan.txt
 
-echo "===== COMMAND HISTORY ====="
-history | tail -n 20
-echo ""
+echo "===== COMMAND HISTORY =====" >> paulEgan.txt
+history | tail -n 20 >> paulEgan.txt
 
