@@ -33,3 +33,58 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    440.0 avail Mem
       7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
       9 root       0 -20       0      0      0 I   0.0   0.0   0:01.42 kworker+
 ===== COMMAND HISTORY =====
+===== DATE =====
+Sat May  3 17:39:28 UTC 2025
+=====HOSTNAME =====
+PaulEganCATC
+===== ARCHITECTURE =====
+x86_64
+=====SYSTEM INFO =====
+Linux PaulEganCATC 6.11.0-1013-azure #13~24.04.1-Ubuntu SMP Fri Mar 28 23:43:34 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+===== UPTIME =====
+ 17:39:28 up 2 days, 22:59,  1 user,  load average: 0.00, 0.00, 0.00
+===== CURRENT USER =====
+paulegan
+===== LOGGED-IN USERS =====
+paulegan pts/0        2025-05-03 17:19 (109.78.10.29)
+===== USER ACTIVITY =====
+ 17:39:28 up 2 days, 22:59,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+paulegan          109.78.10.29     17:19    2days  0.00s  0.01s sshd: paulegan [priv]
+===== TOP PROCESSES =====
+top - 17:39:28 up 2 days, 22:59,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 111 total,   1 running, 110 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  0.0 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :    842.5 total,    110.3 free,    413.1 used,    467.7 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    429.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22776  14124   9644 S   0.0   1.6   0:11.46 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:01.87 kworker+
+===== COMMAND HISTORY =====
+  293  cat ~/paulEganCATC/paulEganscript.sh
+  294  vim -r ~/paulEganCATC/paulEganscript.sh
+  295  rm ~/paulEganCATC/.paulEganscript.sh.swp
+  296  vim ~/paulEganCATC/paulEganscript.sh
+  297  bash ~/paulEganCATC/paulEganscript.sh
+  298  vim ~/paulEganCATC/paulEganscript.sh
+  299  bash ~/paulEganCATC/paulEganscript.sh
+  300  vim ~/paulEganCATC/paulEganscript.sh
+  301  bash ~/paulEganCATC/paulEganscript.sh
+  302  cat ~/paulEganCATC/paulEganscript.sh
+  303  rm -f paulEgan.txt
+  304  bash ~/paulEganCATC/paulEganscript.sh
+  305  ls -l paulEgan.txt
+  306  cat paulEgan.txt
+  307  cd ~/paulEganCATC
+  308  git add paulEganscript.sh paulEgan.txt
+  309  mv ~/paulEgan.txt ~/paulEganCATC/
+  310  git add paulEganscript.sh paulEgan.txt
+  311  git commit -m "Add completed script with output redirection"
+  312  git push origin main
