@@ -1,34 +1,38 @@
 #!/bin/bash
 
-# Script: System Report
+# Script: System Report with Full History
 
-echo "===== DATE =====" >> paulEgan.txt
-date >> paulEgan.txt
+# Set filename with timestamp
+timestamp=$(date +%Y-%m-%d_%H-%M-%S)
+output_file="system_report_$timestamp.txt"
 
-echo "=====HOSTNAME =====" >> paulEgan.txt
-hostname >> paulEgan.txt
+echo "===== DATE =====" >> "$output_file"
+date >> "$output_file"
 
-echo "===== ARCHITECTURE =====" >> paulEgan.txt
-arch >> paulEgan.txt
+echo "===== HOSTNAME =====" >> "$output_file"
+hostname >> "$output_file"
 
-echo "=====SYSTEM INFO =====" >> paulEgan.txt
-uname -a >> paulEgan.txt
+echo "===== ARCHITECTURE =====" >> "$output_file"
+arch >> "$output_file"
 
-echo "===== UPTIME =====" >> paulEgan.txt
-uptime >> paulEgan.txt
+echo "===== SYSTEM INFO =====" >> "$output_file"
+uname -a >> "$output_file"
 
-echo "===== CURRENT USER =====" >> paulEgan.txt
-whoami >> paulEgan.txt
+echo "===== UPTIME =====" >> "$output_file"
+uptime >> "$output_file"
 
-echo "===== LOGGED-IN USERS =====" >> paulEgan.txt
-who >> paulEgan.txt
+echo "===== CURRENT USER =====" >> "$output_file"
+whoami >> "$output_file"
 
-echo "===== USER ACTIVITY =====" >> paulEgan.txt
-w >> paulEgan.txt
+echo "===== LOGGED-IN USERS =====" >> "$output_file"
+who >> "$output_file"
 
-echo "===== TOP PROCESSES =====" >> paulEgan.txt
-top -b -n 1 | head -n 15 >> paulEgan.txt
+echo "===== USER ACTIVITY =====" >> "$output_file"
+w >> "$output_file"
 
-echo "===== COMMAND HISTORY =====" >> paulEgan.txt
-tail -n 20 ~/.bash_history >> paulEgan.txt
+echo "===== TOP PROCESSES =====" >> "$output_file"
+top -b -n 1 | head -n 15 >> "$output_file"
 
+echo "===== COMMAND HISTORY =====" >> "$output_file"
+history -r ~/.bash_history
+history | tail -n 20 >> "$output_file"
