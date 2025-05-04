@@ -31,13 +31,14 @@ echo "Points: $num_points"
 echo "Manager: $is_manager"
 echo ""
 echo "Year | Salary"
+echo "--------|----------"
 
 salary=$start_salary
 point=1
 year=$current_year
 
 while [ $point -le $num_points ]; do
-  printf "%4d | %.2f\n" $year $salary
+  printf "%-7s | €%.2f\n" "$year" "$salary"
   salary=$(echo "$salary + $increment * $points_per_year" | bc)
   point=$((point + points_per_year))
   year=$((year + 1))
