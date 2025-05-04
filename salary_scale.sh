@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # Script: Salary Scale Generator
+echo "=============================="
+echo " EMPLOYEE SALARY SCALE TABLE"
+echo "=============================="
+echo ""
 
 # Ask user for inputs
 read -p "Enter the starting salary: " start_salary
